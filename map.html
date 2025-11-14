@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Campus Map · IUEA Campus Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <span class="logo-mark">CG</span>
+        <span class="logo-text">IUEA Campus Guide</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="map.html" class="active">Campus Map</a>
+        <a href="buildings.html">Buildings</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="section">
+      <div class="container">
+
+        <h1 class="page-title">Campus Map</h1>
+        <p class="section-subtitle">
+          Use this simplified campus map to locate buildings around the International University of East Africa (IUEA).
+        </p>
+
+        <!-- MAP AREA -->
+        <div id="campusMap" style="height: 450px; border-radius: 16px; overflow: hidden;"></div>
+
+        <!-- LEGEND -->
+        <div class="legend">
+          <h2>Legend</h2>
+          <ul>
+            <li><span class="legend-dot legend-academic"></span> Academic Buildings</li>
+            <li><span class="legend-dot legend-admin"></span> Administration</li>
+            <li><span class="legend-dot legend-residential"></span> Residences</li>
+            <li><span class="legend-dot legend-services"></span> Services & Facilities</li>
+          </ul>
+        </div>
+
+        <!-- MAP NOTE -->
+        <p class="map-note">
+          This is a static prototype map for design demonstration. The markers are not GPS-accurate.  
+          In a real application, this would be replaced with an interactive system (GIS, Google Maps, or custom SVG).
+        </p>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 IUEA Campus Guide</p>
+    </div>
+  </footer>
+
+</body>
+</html>

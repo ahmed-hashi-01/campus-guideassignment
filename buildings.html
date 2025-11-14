@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Buildings · IUEA Campus Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <span class="logo-mark">CG</span>
+        <span class="logo-text">IUEA Campus Guide</span>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="map.html">Campus Map</a>
+        <a href="buildings.html" class="active">Buildings</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section">
+
+      <div class="container">
+
+        <h1 class="page-title">Campus Buildings</h1>
+        <p class="section-subtitle">
+          Browse the major buildings of the International University of East Africa (IUEA).
+        </p>
+
+        <!-- Static filter UI -->
+        <div class="filter-bar">
+          <input type="text" class="input" placeholder="Search for a building">
+          <select class="input">
+            <option value="">Filter by type</option>
+            <option>Academic</option>
+            <option>Administrative</option>
+            <option>Services</option>
+          </select>
+        </div>
+
+        <!-- GRID -->
+        <div class="card-grid">
+
+          <!-- LIBRARY -->
+          <a href="building-details.html?building=library" class="card building-card">
+            <div class="card-image-placeholder" style="
+              background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1000&q=60');
+              background-size: cover;
+              background-position: center;
+            "></div>
+
+            <div class="card-body">
+              <h3>IUEA Main Library</h3>
+              <p class="card-meta">Type: Academic · Code: LIB-01</p>
+              <p>
+                The university library provides reading spaces, online resources, and group study rooms.
+              </p>
+            </div>
+          </a>
+
+          <!-- MAIN BUILDING -->
+          <a href="building-details.html?building=main-building" class="card building-card">
+            <div class="card-image-placeholder" style="
+              background-image: url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=1100&q=60');
+              background-size: cover;
+              background-position: center;
+            "></div>
+
+            <div class="card-body">
+              <h3>Main Administration Building</h3>
+              <p class="card-meta">Type: Administration · Code: ADM-01</p>
+              <p>
+                Home to the Registrar, Admissions, Bursar’s office, and key administrative functions.
+              </p>
+            </div>
+          </a>
+
+          <!-- ENGINEERING BLOCK -->
+          <a href="building-details.html?building=engineering-block" class="card building-card">
+            <div class="card-image-placeholder" style="
+              background-image: url('https://cdn.pixabay.com/photo/2016/05/01/21/29/universitatsklinikum-ulm-1366020_640.jpg');
+              background-size: cover;
+              background-position: center;
+            "></div>
+
+            <div class="card-body">
+              <h3>Engineering & Technology Block</h3>
+              <p class="card-meta">Type: Academic · Code: ENG-01</p>
+              <p>
+                Features engineering workshops, labs, lecture rooms and departmental offices.
+              </p>
+            </div>
+          </a>
+
+          <!-- IT & COMPUTER SCIENCE BLOCK -->
+          <a href="building-details.html?building=it-block" class="card building-card">
+            <div class="card-image-placeholder" style="
+              background-image: url('https://images.unsplash.com/photo-1542744094-24638eff58bb?auto=format&fit=crop&w=1100&q=60');
+              background-size: cover;
+              background-position: center;
+            "></div>
+
+            <div class="card-body">
+              <h3>IT & Computer Science Block</h3>
+              <p class="card-meta">Type: Academic · Code: ITC-01</p>
+              <p>
+                Equipped with programming labs, networking labs, and lecture auditoriums.
+              </p>
+            </div>
+          </a>
+
+          <!-- BUSINESS FACULTY -->
+          <a href="building-details.html?building=business-block" class="card building-card">
+            <div class="card-image-placeholder" style="
+              background-image: url('https://cdn.pixabay.com/photo/2016/05/01/21/29/universitatsklinikum-ulm-1366018_640.jpg');
+              background-size: cover;
+              background-position: center;
+            "></div>
+
+            <div class="card-body">
+              <h3>Faculty of Business & Management</h3>
+              <p class="card-meta">Type: Academic · Code: BUS-01</p>
+              <p>
+                Contains lecture theatres, seminar rooms and staff offices for business programs.
+              </p>
+            </div>
+          </a>
+
+          <!-- CAFETERIA -->
+          <a href="building-details.html?building=cafeteria" class="card building-card">
+            <div class="card-image-placeholder" style="
+              background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=60');
+              background-size: cover;
+              background-position: center;
+            "></div>
+
+            <div class="card-body">
+              <h3>Student Cafeteria</h3>
+              <p class="card-meta">Type: Services · Code: CAF-01</p>
+              <p>
+                The main dining area offering meals, snacks, drinks and relaxation space.
+              </p>
+            </div>
+          </a>
+
+          <!-- STUDENT CENTRE -->
+          <a href="building-details.html?building=student-centre" class="card building-card">
+            <div class="card-image-placeholder" style="
+              background-image: url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1100&q=60');
+              background-size: cover;
+              background-position: center;
+            "></div>
+
+            <div class="card-body">
+              <h3>Student Centre</h3>
+              <p class="card-meta">Type: Services · Code: STC-01</p>
+              <p>
+                Hub for student affairs, activities, clubs, meetings and recreation.
+              </p>
+            </div>
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 IUEA Campus Guide</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IUEA Campus Guide</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="assets/js/main.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <div class="logo">
+        <span class="logo-mark">CG</span>
+        <span class="logo-text">IUEA Campus Guide</span>
+      </div>
+
+      <nav class="nav-links">
+        <a href="index.html" class="active">Home</a>
+        <a href="map.html">Campus Map</a>
+        <a href="buildings.html">Buildings</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero fade-section">
+      <div class="container hero-grid">
+
+        <div class="hero-text">
+          <h1>Explore IUEA with Ease</h1>
+          <p>
+            Your interactive campus guide for discovering buildings, departments,
+            services and navigation points across the International University of East Africa.
+          </p>
+
+          <div class="hero-actions">
+            <a href="map.html" class="btn primary">Open Campus Map</a>
+            <a href="buildings.html" class="btn ghost">Browse Buildings</a>
+          </div>
+
+          <p class="hero-note">Your Digital Campus Companion</p>
+        </div>
+
+        <div class="hero-media">
+          <!-- Real campus-style placeholder image -->
+          <div class="hero-image-placeholder" style="
+              background-image: url('https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=900&q=60');
+              background-size: cover;
+              background-position: center;
+          ">
+          </div>
+
+          <!-- Optional promo video image -->
+         <div></div>
+        </div>
+
+      </div>
+       <div class="container hero-video mt-1">
+            <iframe 
+                width="100%" 
+                height="450" 
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+           </div>
+    </section>
+    <!-- QUICK ACCESS -->
+    <section class="section fade-section">
+      <div class="container">
+        <h2 class="section-title">Quick Access</h2>
+        <p class="section-subtitle">Jump directly to key campus locations.</p>
+        <div class="card-grid">
+          <a href="building-details.html?building=library" class="card">
+            <div class="card-image-placeholder" style="
+                background-image: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=900&q=60');
+                background-size: cover;
+                background-position: center;
+            "></div>
+            <h3>IUEA Library</h3>
+            <p>Digital resources, study zones, discussion rooms.</p>
+          </a>
+          <a href="building-details.html?building=main-building" class="card">
+            <div class="card-image-placeholder" style="
+                background-image: url('https://images.unsplash.com/photo-1580582932707-520aed937b7b?auto=format&fit=crop&w=900&q=60');
+                background-size: cover;
+                background-position: center;
+            "></div>
+            <h3>Main Building</h3>
+            <p>Admissions, Registrar, Accounts & Administration offices.</p>
+          </a>
+          <a href="building-details.html?building=engineering" class="card">
+            <div class="card-image-placeholder" style="
+                background-image: url('https://images.unsplash.com/photo-1508385082359-f380a9f0a530?auto=format&fit=crop&w=1000&q=60');
+                background-size: cover;
+                background-position: center;
+            "></div>
+            <h3>Engineering Block</h3>
+            <p>Engineering labs, workshops, lecture rooms.</p>
+          </a>
+          <a href="building-details.html?building=cafeteria" class="card">
+            <div class="card-image-placeholder" style="
+                background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=900&q=60');
+                background-size: cover;
+                background-position: center;
+            "></div>
+            <h3>Cafeteria</h3>
+            <p>Meals, snacks, drinks and student social area.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- MAP PREVIEW -->
+    <section class="section section-alt fade-section">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">Interactive Campus Map</h2>
+          <p>
+            View a visual layout of the full IUEA campus and quickly identify buildings.
+          </p>
+          <ul class="bullet-list">
+            <li>Simplified interactive map</li>
+            <li>Clickable building markers (demo only)</li>
+            <li>Easy color-coded map legend</li>
+          </ul>
+          <a href="map.html" class="btn primary mt-1">View Full Map</a>
+        </div>
+        <div class="map-placeholder" style="
+            height: 240px;
+            background-image: url('https://images.unsplash.com/photo-1528747045269-390fe33c19f2?auto=format&fit=crop&w=1200&q=60');
+            background-size: cover;
+            background-position: center;
+        "></div>
+      </div>
+    </section>
+    <!-- FACULTIES -->
+    <section class="section fade-section">
+      <div class="container">
+        <h2 class="section-title">Faculties & Sections</h2>
+
+        <div class="pill-row">
+          <span class="pill">Faculty of Engineering</span>
+          <span class="pill">Faculty of Business</span>
+          <span class="pill">Faculty of IT & Computer Science</span>
+          <span class="pill">Faculty of Health Sciences</span>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT -->
+    <section class="section section-alt fade-section" id="contact">
+      <div class="container two-col">
+        <div>
+          <h2 class="section-title">Contact & Location</h2>
+
+          <p>
+            Kansanga–Ggaba Road<br>
+            Kampala, Uganda
+          </p>
+
+          <p class="contact-info">
+            Phone: +256 393 517 444<br>
+            Email: info@iuea.ac.ug
+          </p>
+        </div>
+
+          <div class="homepage-map" style="height: 240px; border-radius: 16px; overflow: hidden;"></div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2025 IUEA Campus Guide. All rights reserved.</p>
+      <p class="footer-meta">Prototype for MIT813 Multimedia & Emerging Technologies</p>
+    </div>
+  </footer>
+
+</body>
+</html>
